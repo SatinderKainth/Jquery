@@ -14,7 +14,6 @@
             })
             $("#btn2").click(function(){
                 $("#slide").slideDown();
-                
             })
             $('#btn3').click(function(){
                 $("#slide1").slideUp();
@@ -55,6 +54,9 @@
             $('#attr').click(function(){
                 alert($img4).attr(satty);
             });
+            $('#btn5').click(function(){
+                $('h4').text("Hello Everyone!");
+            })
             
         });
     </script>
@@ -131,6 +133,12 @@
         <h1 id="attr">Attribute function</h1>
         <img id="img4" src="pink.jpg" height="250px" width="200px">
     </div>
+
+    <div>
+        <h3>Text function</h3>
+        <h4>Coding Dojo</h4>
+        <button id="btn5">change some values</button>
+        
     </div>
     </div>
 </body>
