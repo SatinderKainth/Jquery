@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery Functions</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('#btn1').click(function(){
+                $('#change').addClass(change.red)
+            })
+            $("#btn2").click(function(){
+                $("#slide").slideDown();
+                
+            })
+            $('#btn3').click(function(){
+                $("#slide1").slideUp();
+            });
+            $("#btn4").click(function(){
+                alert("Click function Called");
+            });
+            $('#image1').click(function(){
+                $('#image1').hide();
+            })
+            $('#show').click(function(){
+                $('#img').show("image2.jpg");
+            });
+            $('#toggle').click(function(){
+                $('#img1').toggle();
+            });
+            $('#slidetoggle').click(function(){
+                $('#img2').slideToggle()
+            });
+            $('#fade').click(function(){
+                $('#fd1').fadeIn(10000)
+            });
+            $('#fade1').click(function(){
+                $('#fd2').fadeOut(5000)
+            });
+            $('#before').click(function(){
+                $('#before').before("<h2>Coding<h2>")
+            });
+            $('#after').click(function(){
+                $('#after').after("<h2>World!!!!!<h2>")
+            });
+            $('#append').click(function(){
+                $('#append').append("Append Text")
+            });
+            $('#html').click(function(){
+                $('#html').append("HTML Text")
+            });
+            $('#attr').click(function(){
+                alert($img4).attr(satty);
+            });
+            
+        });
+    </script>
+
+</head>
+<body>
+    <div style="display: block;">
+    <h1>Add class</h1>
+    <button id="btn1">Add Class</button>
+
+    <p id="change">click the button to add class red to this paragraph</p>
+    <h1>Slide Toggle</h1>
+
+    <button id="btn2">Slide Down</button>
+    <h3 id="slide" style="display: none; background-color:lightseagreen;">Slide Down button clicked</h3>
+    <!--<p>click the button to slide down a hidden text</p>-->
+
+    <button id="btn3">Slide Up</button>
+    <h3 id="slide1" style="font-size: 20px; color:maroon">Slide Up</h3>
+
+    <h1>Append</h1>
+    <button id="btn4">Append</button>
+    <p>click the button to append a new paragraph</p>
+
+    <h1>Click Function</h1>
+    <button id="btn4">Click</button>
+
+    <div>
+        <h4>Click on the image and it will hide </h4>
+        <img src="flower.jpg" id="image1" height="250px" width="200px">
+        
+    </div>
+    <div>
+        <h4 id="show">Click on the text and it will show an image and text </h4>
+        <p id ="img"style="display: none;"><img src="image2.jpg" id="image2" height="250px" width="200px"><br>Hello Everyone</p>
+    </div>
+    <div>
+        <h2 id="toggle">Click on the Toggle</h2>
+        <img id="img1" style="display: none" src="flower.jpg" width="150px" height="200px">
+    </div>
+    <!--Slide toggle function-->
+    <div>
+        <h2 id="slidetoggle">Click on the SlideToggle</h2>
+        <p id="img2" style="display: none;"><img src="pink.jpg" height="250px" width="200px"></p>
+    </div>
+    <!--FadeIn function-->
+    <div>
+        <h2 id="fade">Click here to fade the text</h2>
+        <p id="fd1" hidden style="background: limegreen; font-size: 20px;">The text was hidden</p>
+    </div>
+
+    <div>
+        <h2 id="fade1">Click here to fade out the text</h2>
+        <h3 id="fd2" style="background: lightskyblue;">Hidden text</h3>
+    </div>
+
+    <div>
+        <h1 id="before" style="font-size: 20px;">Dojo</h1>
+    </div>
+
+    <div>
+        <h1 id="after" style="font-size: 20px;">Hello</h1>
+    </div>
+
+    <div>
+        <h1 id="append" style="font-size: 20px;"> Click here to add some lines after the text</h1>
+    </div>
+
+    <div>
+        <h1 id="html" style="font-size: 20px;"> Click here to add some lines before the original text</h1>
+    </div>
+
+    <div>
+        <h1 id="attr">Attribute function</h1>
+        <img id="img4" src="pink.jpg" height="250px" width="200px">
+    </div>
+    </div>
+    </div>
+</body>
+</html>

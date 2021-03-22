@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disappearing Ninjas</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('img').click(function(){
+                $(this).hide(1000,function(){
+                    $('#image1').append($('img'))
+                });
+            })
+            $("#btn").click(function(){
+                $('img').show();
+            })
+        })
+    </script>
+</head>
+<body>
+    <div id="image">
+        <div id="image1">
+            <img id ="ninja1" src="ninja1.jpg" alt="ninja1" height="200pc" width="200px" style="border:3px solid black">
+        <img id ="ninja2" src="ninja2.jpg" alt="ninja2" height="200pc" width="200px" style="border:3px solid black">
+        <img id ="ninja3" src="ninja3.jpg" alt="ninja3" height="200pc" width="200px" style="border:3px solid black">
+        <img id ="ninja4" src="ninja4.jpg" alt="ninja4" height="200pc" width="200px" style="border:3px solid black">
+        
+        </div>
+            <div id="image2">
+                <img id ="ninja5" src="ninja5.jpg" alt="ninja5" height="200pc" width="200px" style="border:3px solid black">
+                <img id ="ninja6" src="ninja6.jpg" alt="ninja6" height="200pc" width="200px" style="border:3px solid black">
+                <img id ="ninja7" src="ninja7.jpg" alt="ninja7" height="200pc" width="200px" style="border:3px solid black">
+                <img id ="ninja8" src="ninja8.jpg" alt="ninja8" height="200pc" width="200px" style="border:3px solid black">
+            </div>
+    </div>   
+<button id="btn" style="background: green;">Restore</button>
+</body>
+</html>

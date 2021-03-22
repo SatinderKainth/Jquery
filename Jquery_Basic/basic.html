@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>  <!--Jquery Script-->
+    <script src="https://ajax.googleapis.com/ajax/libs/cesiumjs/1.78/Build/Cesium/Cesium.js"></script>
+    <script>
+        $(document).ready(function(){
+      //      $('#image1').click(function(){
+       //         $('#image1').hide();
+       //     });
+      //      $('#image2').click(function(){
+        //        $('#image2').hide();
+        //    });
+       //     $('#image3').click(function(){
+        //        $('#image3').hide();
+       //     });
+            //$('#image4').click(function(){
+            //    $('#image4').hide();
+           // });
+         //   $('#image5').click(function(){
+            //    $('#image5').toggle();
+          //  });
+        //    $('#btn').click(function(){
+            //    $('#btn').html("Hello");
+        //    })
+      //  });
+        
+        //attach a click event listener to all the img tags when the document is ready
+        $('img').click(function(){
+                $(this).hide();
+            });
+        });
+    </script>
+</head>
+<body>
+<img src="image1.jpg" id="image1" height="300px" width="200px" />
+<img src="image2.jpg" id="image2" height="300px" width="200px" />
+<img src="image3.jpg" id="image3" height="300px" width="200px"/>
+<img src="image4.jpg" id="image4" height="300px" width="200px"/>
+<img src="image5.jpg" id="image5" height="300px" width="200px"/>
+<button type="submit"  id="btn">Submit</button>
+
+</body>
+</html>
